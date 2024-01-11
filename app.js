@@ -7,7 +7,7 @@ let complated = document.querySelector("#complated");
 let removeComplated = document.querySelector("#removeComplated");
 let TaskList = [];
 let TaskCount = 0;
-
+saveData();
 
 function addTask() {
     if (inputBox.value === "") {
@@ -41,6 +41,7 @@ inputBox.addEventListener("keyup", function (event) {
     }
 });
 
+//arr method
 function chkSameTask(inputTask) {
     if (TaskCount === 0) {
         return false;
