@@ -39,12 +39,10 @@ inputBox.addEventListener("keyup", (event) => {
 });
 
 function chkSameTask(inputTask) {
-    if (!(TaskList.length === 0)) {
-        if (TaskList.includes(inputTask) === true) {
-            return true;
-        }
-        return false;
+    if (TaskList.includes(inputTask) === true && (!(TaskList.length === 0))) {
+        return true;
     }
+    return false;
 }
 
 listContainer.addEventListener("click", function (e) {
