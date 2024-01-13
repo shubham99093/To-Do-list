@@ -13,25 +13,29 @@
     <div class="container">
         <div class="todo-app">
             <h2>To-Do List <i class="fa-solid fa-list"></i></h2>
+            
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add New Task" />
-                <button id="addTask" onclick="addTask()">Add</button>
+                <button id="addTask" onclick="taskCheck()">Add</button>
             </div>
             <div class="task-container">
                 <ul id="list-container"></ul>
+                <div class="taskCount">
+                    <p>Total Task :<span class="totalTask"></span></p>
+                </div>
                 <div class="Task-header" style="display: none;">
                     <ul class="fliter">
                         <li>
-                            <a href="#" id="all">All</a>
+                            <a href="#" onclick="allTask()" id="all">All</a>
                         </li>
                         <li>
-                            <a href="#" id="active">Active</a>
+                            <a href="#" onclick="active()" id="active">Active</a>
                         </li>
                         <li>
-                            <a href="#" id="complated">complated</a>
+                            <a href="#" onclick="complated()" id="complated">complated</a>
                         </li>
                         <li>
-                            <a href="#" id="removeComplated">Remove Complated</a>
+                            <a href="#" onclick="removeComplated()" id="removeComplated">Remove Complated</a>
                         </li>
                     </ul>
                 </div>

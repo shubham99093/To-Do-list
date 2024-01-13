@@ -133,10 +133,14 @@ ul li span:hover {
     border-radius: 5px;
 }
 
-
-
 .Task-header {
     text-align: center;
     position: relative;
     top: 40px;
+}
+
+.taskCount {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
